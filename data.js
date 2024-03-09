@@ -16,9 +16,9 @@ let allUsers, productData;
 //FEATURED PRODUCT DATA
 if(localStorage.getItem('productData') == null){
    let allproducts = [
-      {pid: 111,pName: 'Fan', price: 5000, discountedPrice: 4500, availableQty: 10, pImage: 'images/fan.webp'},
-      {pid: 112,pName: 'Switch', price: 500, discountedPrice: 450, availableQty: 3, pImage: 'images/switch.webp'},
-      {pid: 113,pName: 'Cooler', price: 15000, discountedPrice: 12050, availableQty: 2, pImage: 'images/cooler.webp'}
+      {pid: 111,pName: 'Fan', price: 5000, discountedPrice: 4500, availableQty: 10, pImage: 'fan.webp'},
+      {pid: 112,pName: 'Switch', price: 500, discountedPrice: 450, availableQty: 3, pImage: 'switch.webp'},
+      {pid: 113,pName: 'Cooler', price: 15000, discountedPrice: 12050, availableQty: 2, pImage: 'cooler.webp'}
    
    ];
    localStorage.setItem('productData', JSON.stringify(allproducts));
