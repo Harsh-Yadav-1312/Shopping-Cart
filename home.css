@@ -1,0 +1,232 @@
+/* Styling for cart items */
+/* Styling for cart items */
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#featuredProducts {
+    list-style: none;
+    padding: 0;
+}
+
+#featuredProducts li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+#featuredProducts li img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+    /* Add a box shadow */
+}
+
+/* Styling for buttons */
+button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.addToCartBtn {
+    background-color: #007bff;
+    /* Change color for Add To Cart button */
+}
+
+.decreaseQtyBtn,
+.increaseQtyBtn {
+    background-color: #dc0606;
+    /* Change color for other buttons */
+}
+
+.deleteCartItemBtn {
+    background-color: transparent;
+    color: #000000;
+}
+
+
+
+#sideNav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 60px;
+
+
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-indent: 0;
+}
+
+#totalPrice {
+    font-weight: bold;
+}
+
+#cartList img {
+    border-radius: 5px;
+    /* Add border radius to cart images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.256);
+}
+
+#cartList li {
+    font-weight: bold;
+    /* Make cart list item names bold */
+}
+
+
+
+
+/*-------------------------###############------------------------- */
+
+/* Modal Styles */
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modal-content {
+
+    height: 20%;
+    width: 30%;
+    margin-top: 20%;
+
+    background-color: #fefefe;
+    margin: 15% auto;
+
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+
+
+    position: relative;
+    /* Added */
+    text-align: center;
+
+    /* Center the content */
+
+}
+
+#orderDetails {
+    margin-top: 20%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Success Image */
+.success img {
+    max-width: 100%;
+    /* Ensure the image doesn't exceed the container width */
+    /* max-height: 300px; */
+    /* Set a maximum height to prevent the image from becoming too large */
+    margin-bottom: 20px;
+    /* Spacing */
+    position: absolute;
+    top: -38%;
+    width: 170px;
+    right: 35%;
+
+}
+
+.thanks {
+    font-size: 20px;
+}
+
+.sub {
+    font-size: 18px;
+}
+
+.success-content {
+    position: absolute;
+    margin-top: 80px;
+    left: 60px;
+}
+
+#sideNav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 60px;
+    background-color: #fff;
+    /* Add a background color if needed */
+    border: 1px solid #ccc;
+    /* Add a border for better visibility */
+    padding: 10px;
+    /* Add padding for better spacing */
+    z-index: 1000;
+    /* Ensure the navigation bar stays on top of other content */
+}
+
+
+
+/* Link styles */
+.addNew {
+    text-decoration: none;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    /* Add margin to separate from other elements */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    /* Include box-shadow in transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.363);
+    /* Add box shadow */
+}
+
+.addNew:hover {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Increase box shadow on hover */
+}

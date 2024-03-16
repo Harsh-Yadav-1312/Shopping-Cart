@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+
+    <style>
+        /* Body styles */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* Adjust as needed */
+        }
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Form container styles */
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        /* Heading styles */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            /* Add margin bottom to create space between heading and form */
+        }
+
+        /* Input field styles */
+        input[type="number"],
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Button styles */
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="conatainer">
+        <h1>Add New Product</h1>
+        <form id="addProductForm">
+            <div>
+                <input type="number" id="pid" placeholder="Enter Product ID" required>
+                <input type="text" id="pName" placeholder="Enter Product Name *" required>
+                <input type="number" id="price" placeholder="Enter Product Price *" required>
+                <input type="number" id="discountedPrice" placeholder="Enter Discounted Price *" required>
+                <input type="text" id="pImage" placeholder="Enter Image URL *" required>
+            </div>
+
+            <div>
+                <button id="onSubmit" type="submit">Add Product</button>
+            </div>
+        </form>
+
+    </div>
+
+    <script type="module" src="addProduct.js"></script>
+
+</body>
+
+</html>

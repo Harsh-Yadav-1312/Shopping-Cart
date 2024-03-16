@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>All Products</h1>
+    <a class="addNew" href="addProduct.html">Click here to add new Product</a>
+    <!-- <div style="position:absolute; right: 100px;">Cart <span id="cartQty">0</span></div> -->
+    <!-- Featured Products display -->
+    <ul id="featuredProducts">
+
+    </ul>
+
+
+
+    <div id="sideNav">
+        <h2>Cart Items- <span id="cartQty">0</span></h2>
+        <ul id="cartList">
+
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <p id="totalPrice">Total: ₹0.00</p>
+        <button id="buyNowBtn">Buy Now</button>
+
+    </div>
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="success"><img src="images/tick.png" alt="Success Image"></div>
+
+            <p id="subtotal"></p>
+        </div>
+
+    </div>
+
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
