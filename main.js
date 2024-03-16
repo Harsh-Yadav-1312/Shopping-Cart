@@ -19,7 +19,7 @@ for (let i = 0; i < allproducts.length; i++) {
     <input type="number" min="1" max="15" value="1" class="quantityInput" id="quantityInput_${allproducts[i].pid}" readonly>
     <button class="increaseQtyBtn">+</button>
     <button class="addToCartBtn" data-id='${allproducts[i].pid}'>Add To Cart</button>
-    <button class="trashBtn">Delete</button>
+    <button class="trashBtn">Reset</button>
     `;
 
         featuredLi.appendChild(newLi);
