@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { allUsers } from "./data.js";
 console.log("REGISTER.JS- ALL USERS", allUsers);
 
@@ -36,21 +35,4 @@ toggleIcon.addEventListener('click', function () {
         toggleIcon.classList.remove('fa-eye-slash');
         toggleIcon.classList.add('fa-eye');
     }
-=======
-import { allUsers } from "./data.js";
-console.log("REGISTER.JS- ALL USERS", allUsers);
-
-let registerForm = document.getElementById("registerForm");
-
-    registerForm.addEventListener("submit", (e)=> {
-            e.preventDefault();
-
-            let userEmail = document.getElementById("emailInput");
-            let userPw = document.getElementById("passwordInput");
-            console.log(userEmail.value,  userPw.value);
-
-            allUsers.push({email: userEmail.value, password: userPw.value});
-
-            localStorage.setItem('userData', JSON.stringify(allUsers));
->>>>>>> 5677f491a3e6f3ef2ba032f7b19b000664b43cba
 });
